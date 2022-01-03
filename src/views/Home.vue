@@ -19,11 +19,11 @@
               alt="github logo"
             />
           </a>
-          <a href="https://github.com/purich-puri" target="_blank">
+          <a href="https://www.linkedin.com/in/purich/" target="_blank">
             <img
               class="logos toBounce"
-              src="../assets/linkedinLogo/LI-In-Bug.png"
-              alt="github logo"
+              src="../assets/linkedin.png"
+              alt="Linkedin logo"
             />
           </a>
         </div>
@@ -39,7 +39,7 @@
 <script>
 // import ProjectList from "../components/ProjectList.vue";
 import Profile from "../components/Profile.vue";
-import Projects from "../components/Projects.vue";
+import Projects from "../views/Projects.vue";
 
 export default {
   name: "Home",
@@ -52,25 +52,10 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-  height: 100vh;
-  border: 20px solid #fff;
-}
-
-.sections {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.block {
-  width: 50%;
-  height: calc(100% / 2);
-}
-
 .logos {
   height: 32px;
   filter: brightness(0);
+  filter: invert(1);
 }
 
 .bounce {

@@ -6,15 +6,20 @@
       <div class="flex flex-col justify-center">
         <div>MY WEAPONS</div>
         <div class="bg-circle flex justify-center">
-          <img src="../assets/vue-js.png" alt="Vue logo" />
+          <img draggable="false" src="../assets/vue-js.png" alt="Vue logo" />
           <img
+            draggable="false"
             class="object-scale-down"
             src="../assets/react-js.png"
             alt="React logo"
           />
-          <img src="../assets/html-5.png" alt="html5 logp" />
-          <img src="../assets/css3.png" alt="css3 logo" />
-          <img src="../assets/javascript.png" alt="Javascript logo" />
+          <img draggable="false" src="../assets/html-5.png" alt="html5 logp" />
+          <img draggable="false" src="../assets/css3.png" alt="css3 logo" />
+          <img
+            draggable="false"
+            src="../assets/javascript.png"
+            alt="Javascript logo"
+          />
         </div>
       </div>
       <div>I AM A WEB DEVELOPER!</div>
@@ -26,6 +31,9 @@
 .main {
   height: 100%;
   user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -drag: none;
 }
 
 /* .smoke-bg {

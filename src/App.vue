@@ -1,8 +1,4 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view />
 </template>
 
@@ -17,20 +13,31 @@
   color: rgb(245, 245, 245);
 }
 
-#nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 30px;
+.wrapper {
+  height: 100vh;
+  border: 20px solid #fff;
 }
 
-#nav a {
-  color: #fff;
+.sections {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#nav a.router-link-exact-active {
-  font-weight: bold;
-  color: #42b983;
+.block {
+  width: 50%;
+  height: calc(100% / 2);
+}
+
+@media screen and (max-width: 650px) {
+  .block {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 500px) {
+  .block {
+    width: 100%;
+  }
 }
 
 /* Color Theme Swatches in Hex */
