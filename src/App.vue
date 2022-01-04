@@ -29,6 +29,10 @@
   height: calc(100% / 2);
 }
 
+.white-img {
+  filter: invert(1);
+}
+
 @media screen and (max-width: 650px) {
   .block {
     width: 100%;
